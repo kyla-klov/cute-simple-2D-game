@@ -12,7 +12,6 @@ public class Player {
 		return energy;
 	}
 	
-	
 	/**
 	 * Takes the amount of energy to deduct from energy and if the amount to deduct is
 	 * not greater than the remaining energy or it is not negative we deduct the required

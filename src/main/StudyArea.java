@@ -6,8 +6,22 @@ public class StudyArea extends Building{
 		super(inputName);
 	}
 	
-	// How are we going to collect the number of points at the end?
-	public void generateGeneratePoints(){
+	/**
+	 * Generates the number of points achieved for the number of times
+	 * the player visits the building. The equation -x^2 + 28x has been
+	 * chosen as the peak of the graph corresponds to 14 visits which is
+	 * what t
+	 * 
+	 * @param numVisits
+	 * @return pointsAcquired
+	 */
+	public int generateGeneratePoints(int numVisits){
+		int pointsAcquired = -(numVisits * numVisits) + 28*numVisits;
 		
+		if (pointsAcquired < 0){
+			pointsAcquired = 0;
+		}
+		
+		return pointsAcquired;
 	}
 }

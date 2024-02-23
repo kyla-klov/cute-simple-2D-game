@@ -31,4 +31,10 @@ public class Player {
 		}
 	}
 	
+	public void incrementDay(){
+		if (day < 7) {
+			day = day + 1;
+		}
+	}
+	
 }

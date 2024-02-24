@@ -2,8 +2,8 @@ package main;
 
 public class StudyArea extends Building{
 	
-	public StudyArea(String inputName, int inputEnergyUsage) {
-		super(inputName, inputEnergyUsage);
+	public StudyArea(String inputName, int inputEnergyUsage, int inputTimeUsage) {
+		super(inputName, inputEnergyUsage, inputTimeUsage);
 	}
 	
 	/**
